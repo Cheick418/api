@@ -11,10 +11,8 @@ const sequelize = new Sequelize(
     {
       host: 'sql8.freesqldatabase.com',
       dialect: 'mysql', //base de donnée utiliser
-      dialectOptions: {
-      timezone: 'Etc/GMT-2',
-  },
-  logging: false
+
+      logging: false
 })
   
 const Pokemon = PokemonModel(sequelize, DataTypes)
