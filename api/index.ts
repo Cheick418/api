@@ -1,7 +1,6 @@
 //https://vercel.com/guides/using-express-with-vercel
 const express = require('express');
 const bodyParser=require('body-parser');
-const Sequelize=require('../src/db/Sequileze');
 
 
 
@@ -10,7 +9,6 @@ const port = process.env.PORT|| 3306;
 
 app.use(bodyParser.json())
 
-Sequelize.initDb();
 
 app.get('/',(req,res)=>{
     res.json('gooood work');
