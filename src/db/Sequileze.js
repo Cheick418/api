@@ -10,7 +10,7 @@ const sequelize = new Sequelize(
     'smd4MzGRzG',  //mot de passe de la base de donné
     {
       host: 'sql8.freesqldatabase.com',
-      dialect: 'mariadb', //base de donnée utiliser
+      dialect: 'mysql', //base de donnée utiliser
       dialectOptions: {
       timezone: 'Etc/GMT-2',
   },
@@ -36,4 +36,4 @@ const initDb = () => {
 }
   
 module.exports = { 
-  initDb, Pokemon,User}
+  initDb, Pokemon}

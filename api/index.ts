@@ -1,7 +1,7 @@
 //https://vercel.com/guides/using-express-with-vercel
 const express = require('express');
 const bodyParser=require('body-parser');
-const Sequelize=require('./src/db/Sequileze');
+const Sequelize=require('../src/db/Sequileze');
 
 
 
@@ -20,7 +20,7 @@ require('../src/routes/findPokemonByPk')(app)
 require('../src/routes/createPokemon')(app)
 require('../src/routes/updatePokemon')(app)
 require('../src/routes/deletePokemon')(app)
-require('../src/routes/login')(app)
+
 
 app.use((req,res)=>{
     res.status(404).json({message:"la ressource demander n'existe pas"})

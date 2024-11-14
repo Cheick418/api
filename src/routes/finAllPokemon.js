@@ -4,7 +4,7 @@ const {Op}=require('sequelize')
 
   
 module.exports = (app) => {
-  app.get('/api/pokemons',auth, (req, res) => {
+  app.get('/api/pokemons', (req, res) => {
     const name=req.query.name;
     if(name &&name.length<2){
       const message='le terme de recherche  doit comptenir au moin deux caracteres';
