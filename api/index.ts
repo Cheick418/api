@@ -6,7 +6,7 @@ const Sequelize=require('../src/db/Sequileze');
 
 
 const app = express();
-const port = 3306;
+const port = process.env.PORT|| 3306;
 
 app.use(bodyParser.json())
 
