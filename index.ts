@@ -1,7 +1,7 @@
 //https://vercel.com/guides/using-express-with-vercel
 const express = require('express');
 const bodyParser=require('body-parser');
-const Sequelize=require('../src/db/Sequileze');
+const Sequelize=require('./src/db/Sequileze');
 
 
 
